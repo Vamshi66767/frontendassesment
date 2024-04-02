@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Add any custom styling here */
+    </style>
+    <title>Input Restrictions Example</title>
+</head>
+<body>
+    <h1>Input Restrictions</h1>
+    <form action="/submit" method="post">
+        <!-- Disabled input -->
+        <label for="disabledInput">Disabled Input:</label>
+        <input type="text" id="disabledInput" name="disabledInput" disabled>
+
+        <!-- Max length input -->
+        <label for="maxLengthInput">Max Length (5 characters):</label>
+        <input type="text" id="maxLengthInput" name="maxLengthInput" maxlength="5">
+
+        <!-- Min and max input -->
+        <label for="rangeInput">Range (10 to 50):</label>
+        <input type="number" id="rangeInput" name="rangeInput" min="10" max="50">
+
+        <!-- Readonly input -->
+        <label for="readonlyInput">Readonly Input:</label>
+        <input type="text" id="readonlyInput" name="readonlyInput" readonly value="Readonly Value">
+
+        <!-- Required input -->
+        <label for="requiredInput">Required Input:</label>
+        <input type="text" id="requiredInput" name="requiredInput" required>
+
+        <!-- Size input -->
+        <label for="sizeInput">Size (width):</label>
+        <input type="text" id="sizeInput" name="sizeInput" size="20">
+
+        <!-- Default value input -->
+        <label for="defaultValueInput">Default Value:</label>
+        <input type="text" id="defaultValueInput" name="defaultValueInput" value="Default Text">
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Add any custom styling here */
+    </style>
+    <title>My Form</title>
+</head>
+<body>
+    <h1>Input Types Example</h1>
+    <form action="/submit" method="post">
+        <!-- Text input -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+        <!-- Password input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <!-- Email input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+        <!-- Number input -->
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="100" value="1">
+
+        <!-- Range input -->
+        <label for="brightness">Brightness:</label>
+        <input type="range" id="brightness" name="brightness" min="0" max="100" value="50">
+
+        <!-- Color input -->
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color" value="#ff0000">
+
+        <!-- Date input -->
+        <label for="eventDate">Event Date:</label>
+        <input type="date" id="eventDate" name="eventDate">
+
+        <!-- File input -->
+        <label for="fileUpload">Upload File:</label>
+        <input type="file" id="fileUpload" name="fileUpload">
+
+        <!-- Time input -->
+        <label for="eventTime">Event Time:</label>
+        <input type="time" id="eventTime" name="eventTime">
+
+        <!-- Month input -->
+        <label for="birthMonth">Birth Month:</label>
+        <input type="month" id="birthMonth" name="birthMonth">
+
+        <!-- Week input -->
+        <label for="weekNumber">Week Number:</label>
+        <input type="week" id="weekNumber" name="weekNumber">
+
+        <!-- Custom button -->
+        <button type="button">Click me!</button>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Add any custom styling here */
+    </style>
+    <title>My Form</title>
+</head>
+<body>
+    <h1>My Web Page</h1>
+    <form action="/submit" method="post">
+        <!-- Text input -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+        <!-- Password input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <!-- Radio buttons -->
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <!-- Checkbox -->
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+        <label for="subscribe">Subscribe to our newsletter</label>
+
+        <!-- Submit and reset buttons -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+        <!-- Custom button -->
+        <button type="button">Click me!</button>
+    </form>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target Attribute Example</title>
+</head>
+<body>
+    <h1>Web Page with Target Attribute</h1>
+    <p>
+        <a href="https://www.google.com" target="_blank">Visit google.com in a new tab</a>
+    </p>
+    <p>
+        <a href="https://www.Wikipedia.org " target="_self">Visit .Wikipedia.org in the same tab</a>
+    </p>
+    <p>
+        <a href="https://www.Trafficmanager.net" target="_parent">Visit Trafficmanager.net in the parent frame</a>
+    </p>
+    <p>
+        <a href="https://www.uaf.edu" target="_top">Visit uaf.edu in the full window</a>
+    </p>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Add any custom styling here */
+    </style>
+    <title>Iframe and Marquee Example</title>
+</head>
+<body>
+    <!-- Example of an iframe -->
+    <h1>Embedded Google Map</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.1234567890123!2d-122.12412345678901!3d47.6749123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906a9b6d03f7c5%3A0x3e1b3a4d6d3ad7f!2sMicrosoft%20Redmond%20Campus!5e0!3m2!1sen!2sus!4v1622145678901!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    <!-- Example of a marquee -->
+    <h2>Breaking News:</h2>
+    <marquee behavior="scroll" direction="left" scrollamount="5">
+        Microsoft announces new features for developers!
+    </marquee>
+</body>
+</html>
+
