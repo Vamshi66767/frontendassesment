@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS Form Validation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body>
+
+<div ng-controller="FormController">
+    <form name="myForm" novalidate>
+        <h2>Textbox:</h2>
+        <input type="text" ng-model="textInput" name="textInput" ng-minlength="3" required>
+        <div ng-messages="myForm.textInput.$error" ng-show="myForm.textInput.$dirty">
+            <div ng-message="required">This field is required.</div>
+            <div ng-message="minlength">Minimum length is 3 characters.</div>
+        </div>
+
+        <h2>Email:</h2>
+        <input type="email" ng-model="emailInput" name="emailInput" required>
+        <div ng-messages="myForm.emailInput.$error" ng-show="myForm.emailInput.$dirty">
+            <div ng-message="required">This field is required.</div>
+            <div ng-message="email">Please enter a valid email address.</div>
+        </div>
+
+        <h2>Selectbox:</h2>
+        <select ng-model="selectedOption" name="selectInput" required>
+            <option value="">Select an option</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select>
+        <div ng-messages="myForm.selectInput.$error" ng-show="myForm.selectInput.$dirty">
+            <div ng-message="required">Please select an option.</div>
+        </div>
+
+        <h2>Checkbox:</h2>
+        <input type="checkbox" ng-model="checkboxValue" name="checkboxInput" required> Checkbox
+        <div ng-messages="myForm.checkboxInput.$error" ng-show="myForm.checkboxInput.$dirty">
+            <div ng-message="required">This checkbox is required.</div>
+        </div>
+
+        <h2>Radiobutton:</h2>
+        <input type="radio" ng-model="radioValue" value="option1" name="radioInput" required> Option 1
+        <input type="radio" ng-model="radioValue" value="option2" name="radioInput" required> Option 2
+        <input type="radio" ng-model="radioValue" value="option3" name="radioInput" required> Option 3
+        <div ng-messages="myForm.radioInput.$error" ng-show="myForm.radioInput.$dirty">
+            <div ng-message="required">Please select an option.</div>
+        </div>
+
+        <hr>
+
+        <button type="submit" ng-disabled="myForm.$invalid">Submit</button>
+    </form>
+
+    <div ng-show="myForm.$submitted">
+        <h3>Form Data:</h3>
+        <p>Textbox Value: {{textInput}}</p>
+        <p>Email Value: {{emailInput}}</p>
+        <p>Selectbox Value: {{selectedOption}}</p>
+        <p>Checkbox Value: {{checkboxValue}}</p>
+        <p>Radiobutton Value: {{radioValue}}</p>
+    </div>
+</div>
+
+<script>
+    var app = angular.module('myApp', ['ngMessages']);
+    app.controller('FormController', function($scope) {
+        $scope.textInput = '';
+        $scope.emailInput = '';
+        $scope.selectedOption = '';
+        $scope.checkboxValue = false;
+        $scope.radioValue = '';
+    });
+</script>
+
+</body>
+</html>
