@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Page</title>
+    <style>
+        /* Apply styles to specific elements using pseudo-classes */
+        a:hover {
+            color: red; /* Change text color on hover */
+        }
+        
+        /* Apply styles to the first paragraph */
+        p:first-of-type {
+            font-size: 20px; /* Increase font size */
+        }
+        
+        /* Apply styles to list items when hovered */
+        li:hover {
+            background-color: lightgray; /* Change background color on hover */
+        }
+        
+        /* Apply styles to the first letter of each paragraph */
+        p::first-letter {
+            font-size: 150%; /* Increase first letter size */
+            font-weight: bold; /* Make first letter bold */
+            color: blue; /* Change color of first letter */
+        }
+        
+        /* Apply styles to the last list item */
+        li:last-child {
+            font-style: italic; /* Make last list item italic */
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading</h1>
+    <p>This is a paragraph.</p>
+    <p><em>Italic text</em></p>
+    <p><strong>Bold text</strong></p>
+    <a href="#section1">Jump to Section 1</a>
+    <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+    </ul>
+    <label for="input_field">Label:</label>
+    <input type="text" id="input_field">
+    <blockquote>This is a blockquote.</blockquote>
+    <hr>
+    <img src="https://via.placeholder.com/150" alt="Placeholder image">
+    <div id="section1">This is Section 1</div>
+    <a href="#">Back to Top</a>
+    <span>This is a span.</span>
+</body>
+</html>
